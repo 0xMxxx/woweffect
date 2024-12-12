@@ -8,9 +8,10 @@ import { useRouter } from 'next/router';
 import Layout from '../src/components/Layout';
 
 export default function Home() {
-  const Spline = dynamic(() => import("@splinetool/react-spline"), {
+  const Spline = dynamic(() => import('@splinetool/react-spline').then(mod => mod.default), {
+    ssr: false, // Desactiva SSR porque Spline depende de APIs del navegador
     loading: () => <p>Loading...</p>,
-  })
+  });
 
   return (
     <Layout>
