@@ -4,7 +4,7 @@ export const defaultCharacter: Character = {
     name: "Seth",
     username: "seth",
     plugins: [],
-    clients: [Clients.TWITTER],
+    clients: [Clients.TWITTER,Clients.DIRECT],
     modelProvider: ModelProviderName.ANTHROPIC,
     settings: {
         secrets: {
