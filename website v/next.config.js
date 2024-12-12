@@ -5,7 +5,7 @@ const nextConfig = {
 
 module.exports = {
   webpack: (config) => {
-    config.resolve.fallback = { fs: false, path: false }; // Opcional: si `@splinetool/react-spline` requiere estos módulos
+    config.resolve.alias['@splinetool/react-spline'] = require.resolve('@splinetool/react-spline/dist/index.mjs');
     return config;
   },
 };
