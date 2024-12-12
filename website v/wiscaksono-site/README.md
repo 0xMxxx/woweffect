@@ -20,8 +20,8 @@
 This application requires Node.js v18.17+.
 
 ```bash
-git clone https://github.com/wiscaksono/wiscaksono-site
-cd wiscaksono-site
+git clone https://github.com/SethDiary/SethDiary-site
+cd SethDiary-site
 pnpm install
 pnpm dev
 ```

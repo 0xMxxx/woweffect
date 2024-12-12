@@ -14,17 +14,17 @@ import { ENV } from '@/lib/constants'
 export const metadata: Metadata = {
   metadataBase: new URL(ENV.NEXT_PUBLIC_WEBSITE_URL),
   title: {
-    default: 'Wiscaksono',
-    template: '%s | Wiscaksono'
+    default: 'Seth Diary',
+    template: '%s | SethDiary'
   },
   description:
-    "Get to know me, Wisnu Wicaksono, through this website! I'm a passionate frontend developer and electrical engineering student, and I've poured my skills and creativity into building this site with Next.js and Tailwind CSS. Explore my interactive projects, clean portfolio, and a glimpse into my technical expertise. If you're seeking a talented developer for your next project or simply looking for inspiration, feel free to get in touch!",
+    "Get to know me, Seth",
   openGraph: {
-    title: 'Wiscaksono',
+    title: 'SethDiary',
     description:
-      "Get to know me, Wisnu Wicaksono, through this website! I'm a passionate frontend developer and electrical engineering student, and I've poured my skills and creativity into building this site with Next.js and Tailwind CSS. Explore my interactive projects, clean portfolio, and a glimpse into my technical expertise. If you're seeking a talented developer for your next project or simply looking for inspiration, feel free to get in touch!",
+      "Get to know me, Seth, through this website!",
     url: ENV.NEXT_PUBLIC_WEBSITE_URL,
-    siteName: 'Wiscaksono',
+    siteName: 'SethDiary',
     locale: 'en_US',
     type: 'website'
   },
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     }
   },
   twitter: {
-    title: 'Wiscaksono',
+    title: 'SethDiary',
     card: 'summary_large_image'
   },
   verification: {
@@ -64,7 +64,6 @@ export default async function RootLayout({ children }: Readonly<Props>) {
           <ResponsiveIndicator />
           <div className='fixed h-[300%] w-[300%] bg-grain-noise opacity-5 animate-grain pointer-events-none top-0' aria-hidden='true' />
           <div className='grid-pattern absolute left-0 top-0 h-full w-full' />
-          {process.env.NODE_ENV === 'production' && <Script defer src='https://umami.wiscaksono.com/script.js' data-website-id='1f3b0505-7366-47bd-8757-95ad25395088' />}
         </body>
       </html>
     </ViewTransitions>
